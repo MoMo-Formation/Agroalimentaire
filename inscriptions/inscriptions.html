@@ -5,6 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inscription à la Formation - MoMo Agroalimentaire</title>
     <link rel="stylesheet" href="styles.css">
+    <script>
+        function envoyerMessageWhatsApp() {
+            // Récupérer les valeurs des champs du formulaire
+            const nomComplet = document.getElementById('full-name').value;
+            const modePaiement = document.getElementById('payment-method').value;
+            const detailsPaiement = document.getElementById('payment-details').value;
+            
+            // Construire le message
+            const message = `Bonjour, je souhaite confirmer mon inscription à la formation.\n\n` +
+                            `Nom complet : ${nomComplet}\n` +
+                            `Mode de paiement : ${modePaiement}\n` +
+                            `Détails du paiement : ${detailsPaiement}\n\n` +
+                            `Merci de valider mon paiement.\n\n` +
+                            `⚠️ Veuillez également joindre une capture d'écran de votre reçu de paiement pour confirmer votre inscription.`;
+
+            // Encoder le message pour l'URL WhatsApp
+            const messageEncode = encodeURIComponent(message);
+
+            // Rediriger vers WhatsApp avec le message pré-rempli
+            const numeroWhatsApp = "https://wa.me/22601368949"; // Numéro WhatsApp sans "+"
+            const url = `${numeroWhatsApp}?text=${messageEncode}`;
+            window.open(url, '_blank'); // Ouvrir WhatsApp dans un nouvel onglet
+        }
+    </script>
 </head>
 <body>
     <header>
@@ -13,7 +37,7 @@
 
     <section>
         <h2>Conditions de Participation</h2>
-        <form action="submit_form.php" method="POST" enctype="multipart/form-data">
+        <form onsubmit="event.preventDefault(); envoyerMessageWhatsApp();">
             <label for="full-name">Nom Complet :</label>
             <input type="text" id="full-name" name="full-name" required>
 
@@ -30,8 +54,11 @@
                 <option value="Western Union">Western Union / Moneygram / Ria</option>
             </select>
 
-            <label for="payment-screenshot">Capture d'écran ou photo du reçu de paiement :</label>
-            <input type="file" id="payment-screenshot" name="payment-screenshot" accept="image/*" required>
+            <label for="payment-details">Détails du Paiement :</label>
+            <textarea id="payment-details" name="payment-details" required placeholder="Saisissez les détails comme l'heure ou l'identifiant de la transaction"></textarea>
+
+            <!-- Message d'instructions pour l'utilisateur -->
+            <p><strong>⚠️ Important :</strong> Après avoir cliqué sur "Envoyer la preuve de paiement", vous serez redirigé vers WhatsApp. Merci d'y joindre une capture d'écran ou une photo de votre reçu de paiement pour confirmer votre inscription.</p>
 
             <button type="submit" class="btn">Envoyer la Preuve de Paiement</button>
         </form>
