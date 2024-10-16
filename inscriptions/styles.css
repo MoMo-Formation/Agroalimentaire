@@ -3,25 +3,11 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #f9f9f9;
     color: #333;
     line-height: 1.6;
 }
 
-h1, h2, h3 {
-    color: #2e8b57;
-}
-
-a {
-    color: #ff9800;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-/* Page header */
 header {
     background-color: #2e8b57;
     padding: 20px;
@@ -33,10 +19,10 @@ header h1 {
     font-size: 2.5rem;
 }
 
-/* Main section styles */
+/* Main section */
 section {
-    padding: 50px 20px;
-    max-width: 1000px;
+    padding: 40px 20px;
+    max-width: 900px;
     margin: 0 auto;
     background-color: white;
     border-radius: 10px;
@@ -49,41 +35,91 @@ section h2 {
     color: #2e8b57;
 }
 
+section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #2e8b57;
+}
+
 section p {
     font-size: 1.2rem;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     color: #666;
 }
 
-section ul {
-    list-style-type: none;
-    padding: 0;
+.payment-methods h4 {
+    font-size: 1.3rem;
+    color: #ff9800;
+    margin-bottom: 10px;
 }
 
-section ul li {
-    margin-bottom: 10px;
+.payment-methods ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.payment-methods ul li {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.payment-methods ul li strong {
+    color: #2e8b57;
+}
+
+/* Form styles */
+form {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+form input, form select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
     font-size: 1rem;
     color: #333;
 }
 
-section ul li strong {
-    color: #2e8b57;
+form input[type="file"] {
+    padding: 5px;
 }
 
-/* Buttons */
-.btn {
-    display: inline-block;
+form button {
     background-color: #ff9800;
     color: white;
     padding: 12px 25px;
-    text-decoration: none;
+    border: none;
     border-radius: 5px;
-    font-size: 1rem;
+    font-size: 1.1rem;
+    cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
-.btn:hover {
+form button:hover {
     background-color: #e68a00;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 0.9rem;
 }
 
 /* Responsive design */
@@ -93,7 +129,7 @@ section ul li strong {
     }
 
     section {
-        padding: 30px 15px;
+        padding: 20px;
     }
 
     section h2 {
@@ -104,8 +140,19 @@ section ul li strong {
         font-size: 1rem;
     }
 
-    .btn {
-        font-size: 0.9rem;
-        padding: 10px 20px;
+    .payment-methods h4 {
+        font-size: 1.1rem;
+    }
+
+    .payment-methods ul li {
+        font-size: 1rem;
+    }
+
+    form button {
+        font-size: 1rem;
+    }
+
+    footer {
+        font-size: 0.8rem;
     }
 }
