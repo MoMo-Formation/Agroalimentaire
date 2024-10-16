@@ -1,0 +1,393 @@
+/* Global styles for all pages */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    color: #2e8b57;
+}
+
+a {
+    color: #ff9800;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Header/Banner Section for the homepage */
+.hero {
+    background-image: url('../accueil/images/background-agro.jpg'); /* Image de fond */
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    text-align: center;
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+    color: #8B4513; /* Couleur brun */
+}
+
+.hero-btn {
+    background-color: #ff9800;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+.hero-btn:hover {
+    background-color: #e68a00;
+}
+
+/* About section on the homepage */
+.about {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #e0f7fa; /* Bleu clair */
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #006064; /* Titre coloré */
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-item {
+    text-align: center;
+    max-width: 300px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.about-item:hover {
+    transform: translateY(-5px); /* Effet de survol */
+}
+
+.about-item img {
+    width: 70px;
+    margin-bottom: 15px;
+}
+
+.about-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.about-item p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Formations section on the homepage */
+.formations {
+    background-color: #fff8e1; /* Arrière-plan jaune doux */
+    padding: 50px 0;
+    text-align: center;
+}
+
+.formations h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #f57f17; /* Couleur vive pour le titre */
+    text-align: center;
+}
+
+.formation-list {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.formation-card {
+    text-align: center;
+    max-width: 300px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.formation-card:hover {
+    transform: translateY(-5px); /* Effet de survol */
+    background-color: #ffe082; /* Couleur lors du survol */
+}
+
+.formation-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #f57f17;
+}
+
+.formation-card p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.formation-card .btn {
+    background-color: #2e8b57;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.formation-card .btn:hover {
+    background-color: #267a46;
+}
+
+/* Testimonials section */
+.testimonials {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #fce4ec; /* Couleur rose douce */
+}
+
+.testimonials h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #d81b60; /* Couleur vive pour le titre */
+}
+
+.testimonial-list {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.testimonial-item {
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.testimonial-item:hover {
+    transform: translateY(-5px);
+}
+
+.testimonial-item p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.testimonial-item span {
+    font-size: 0.9rem;
+    color: #999;
+}
+
+/* CTA Section */
+.cta {
+    background-color: #4caf50;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.cta h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.cta p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.cta .btn {
+    background-color: #ff9800;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta .btn:hover {
+    background-color: #e68a00;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+/* Pages spécifiques */
+
+/* Page Inscriptions */
+section ol {
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+section ol li {
+    margin-bottom: 10px;
+}
+
+section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+section ul li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #333;
+}
+
+section ul li strong {
+    color: #2e8b57;
+}
+
+/* Page Témoignages */
+article video, article img {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Page Contact */
+.contact-card {
+    max-width: 400px;
+}
+
+.contact-card img {
+    width: 60px;
+    margin-bottom: 15px;
+}
+
+.contact-card ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contact-card ul li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+.contact-card ul li a {
+    color: #ff9800;
+}
+
+.contact-card ul li a:hover {
+    color: #e68a00;
+}
+/* Section de paiement */
+.payment-section {
+    background-color: #f9f9f9;
+    padding: 50px;
+    text-align: left;
+    max-width: 900px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.payment-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #2e8b57;
+    text-align: center;
+}
+
+.payment-section .warning {
+    background-color: #fff3cd;
+    color: #856404;
+    padding: 15px;
+    border-left: 5px solid #ff9800;
+    margin-bottom: 30px;
+}
+
+.payment-block {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.payment-block h3 {
+    font-size: 1.8rem;
+    color: #f57f17;
+    margin-bottom: 10px;
+}
+
+.payment-block p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.payment-block ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.payment-block ul li {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.payment-block ul li strong {
+    color: #2e8b57;
+}
+
+/* Mise en forme des liens */
+.payment-block a {
+    color: #ff9800;
+}
+
+.payment-block a:hover {
+    color: #e68a00;
+    text-decoration: underline;
+}
