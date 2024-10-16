@@ -13,62 +13,7 @@
 
     <section>
         <h2>Conditions de Participation</h2>
-        <p>Pour vous inscrire, veuillez suivre les instructions et effectuer votre paiement via l'un des moyens ci-dessous :</p>
-
-        <h3>Mode de paiement selon votre région</h3>
-        <div class="payment-methods">
-            <h4>Afrique de l'Ouest (Burkina Faso, Côte d'Ivoire, Mali, Sénégal, Bénin, Togo)</h4>
-            <ul>
-                <li><strong>Orange Money</strong> : +226 57547436</li>
-                <li><strong>Moov Money</strong> : +226 01368949</li>
-                <li><strong>Wave</strong> : +226 57547436</li>
-                <li><strong>MTN</strong> : +226 57547436</li>
-            </ul>
-
-            <!-- Instruction spécifique au Togo -->
-            <h4>Togo (Transfert depuis Moov Flooz)</h4>
-            <p>Depuis le Togo, veuillez effectuer un transfert via <strong>Moov Flooz</strong> vers le numéro <strong>Orange Burkina</strong> : +226 57547436.</p>
-
-            <h4>RDC</h4>
-            <ul>
-                <li><strong>Airtel Money</strong> : +243 978 164 103</li>
-                <li><strong>Vodacom</strong> : +243 827 262 231</li>
-            </ul>
-
-            <h4>Tchad</h4>
-            <ul>
-                <li><strong>Airtel Money</strong> : +235 62 76 44 62</li>
-                <li><strong>Moov Money</strong> : +235 97 40 24 04</li>
-            </ul>
-
-            <h4>Maroc</h4>
-            <ul>
-                <li><strong>Virement</strong> : Titulaire : ISSOUFOU SOURA<br>
-                    RIB : 230 570 4386826211008400 04<br>
-                    IBAN : MA64 2305 7043 8682 6211 0084 0004<br>
-                    SWIFT : CIHMMAMC</li>
-            </ul>
-
-            <h4>Niger</h4>
-            <ul>
-                <li><strong>Nita</strong> : Nom : COMPAORE Wend Lassida Ismael Moïse<br>
-                    Ville : Bobo-Dioulasso, Burkina Faso<br>
-                    Numéro : +226 57547436</li>
-            </ul>
-
-            <h4>Tous les Pays</h4>
-            <ul>
-                <li><strong>Western Union / Moneygram / Ria</strong> : Nom : COMPAORE Wend Lassida Ismael Moïse<br>
-                    Ville : Bobo-Dioulasso, Burkina Faso<br>
-                    Numéro : +226 57547436</li>
-            </ul>
-        </div>
-
-        <h3>Informations de Paiement</h3>
-        <p>Après avoir effectué le paiement, veuillez remplir le formulaire ci-dessous avec vos informations et la capture d'écran de la transaction :</p>
-
-        <!-- Formulaire de soumission de la preuve de paiement -->
-        <form action="submit_payment.php" method="POST" enctype="multipart/form-data">
+        <form action="submit_form.php" method="POST" enctype="multipart/form-data">
             <label for="full-name">Nom Complet :</label>
             <input type="text" id="full-name" name="full-name" required>
 
@@ -85,10 +30,7 @@
                 <option value="Western Union">Western Union / Moneygram / Ria</option>
             </select>
 
-            <label for="transaction-number">Numéro de Transaction :</label>
-            <input type="text" id="transaction-number" name="transaction-number" required>
-
-            <label for="payment-screenshot">Capture d'écran de la Transaction :</label>
+            <label for="payment-screenshot">Capture d'écran ou photo du reçu de paiement :</label>
             <input type="file" id="payment-screenshot" name="payment-screenshot" accept="image/*" required>
 
             <button type="submit" class="btn">Envoyer la Preuve de Paiement</button>
