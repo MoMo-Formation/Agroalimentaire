@@ -78,6 +78,7 @@ a:hover {
     gap: 30px;
     max-width: 1200px;
     margin: 0 auto;
+    flex-wrap: wrap;
 }
 
 .about-item {
@@ -130,6 +131,7 @@ a:hover {
     gap: 20px;
     max-width: 1200px;
     margin: 0 auto;
+    flex-wrap: wrap;
 }
 
 .formation-card {
@@ -191,6 +193,7 @@ a:hover {
     gap: 30px;
     max-width: 1200px;
     margin: 0 auto;
+    flex-wrap: wrap;
 }
 
 .testimonial-item {
@@ -321,6 +324,7 @@ article video, article img {
 .contact-card ul li a:hover {
     color: #e68a00;
 }
+
 /* Section de paiement */
 .payment-section {
     background-color: #f9f9f9;
@@ -390,4 +394,41 @@ article video, article img {
 .payment-block a:hover {
     color: #e68a00;
     text-decoration: underline;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .about-content, .formation-list, .testimonial-list {
+        flex-direction: column;
+    }
+
+    .about-item, .formation-card, .testimonial-item {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .hero-btn {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+
+    .cta h2 {
+        font-size: 2rem;
+    }
+
+    .cta p {
+        font-size: 1rem;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
 }
