@@ -23,7 +23,7 @@ a:hover {
 
 /* Header/Banner Section for the homepage */
 .hero {
-    background-image: href('accueil/images/background-agro.jpg'); /* Image de fond */
+    background-image: href="accueil/images/background-agro.jpg"; /* Image de fond */
     background-size: cover;
     background-position: center;
     padding: 100px 0;
