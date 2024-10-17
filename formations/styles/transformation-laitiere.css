@@ -1,0 +1,42 @@
+/* Styles spécifiques pour la page de transformation laitière */
+body {
+    background-image: url('images/background-lait.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #333;
+}
+
+/* Styliser la liste des programmes */
+.program-list {
+    list-style-type: none;
+    padding: 0;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.program-list li {
+    margin-bottom: 30px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Styliser les images après chaque point */
+.program-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+/* Media queries pour les petits écrans */
+@media (max-width: 768px) {
+    .program-list li {
+        margin-bottom: 20px;
+    }
+
+    .program-image {
+        max-width: 100%;
+    }
+}
