@@ -6,22 +6,37 @@
     <title>Transformation Laitière - MoMo Agroalimentaire</title>
     <link rel="stylesheet" href="../../styles.css">
     <style>
-        /* Mise à jour du chemin du fond */
+        /* Mise à jour du chemin du fond pour un décor laitier */
         body {
-            background-image: url('../../formations/transformation-laitiere/background-lait.jpg');
+            background-image: url('images/background-lait.jpg');
             background-size: cover;
             background-position: center;
         }
         h1 {
             color: #2980b9; /* Couleur bleu rappelant le lait */
         }
+        /* Style des icônes */
+        .about-item img {
+            max-width: 70px;
+            margin-bottom: 15px;
+        }
+        .about-item {
+            text-align: center;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .about-item:hover {
+            transform: translateY(-5px);
+        }
     </style>
 </head>
 <body>
     <header>
-        <!-- Insertion du logo (général) -->
+        <!-- Insertion du logo -->
         <img src="../../accueil/images/logo.png" alt="Logo MoMo Agroalimentaire" style="max-width: 150px; margin: 20px auto; display: block;">
-
         <h1>Formation - Transformation Laitière</h1>
     </header>
 
@@ -35,6 +50,27 @@
             <li>Conservation du lait et dérivés</li>
         </ul>
         <a href="../../inscriptions/inscriptions.html" class="btn">Inscrivez-vous maintenant</a>
+    </section>
+
+    <section class="about">
+        <h2>Pourquoi choisir notre formation ?</h2>
+        <div class="about-content">
+            <div class="about-item">
+                <img src="icons/icon-lait.png" alt="Bouteille de lait">
+                <h3>Techniques professionnelles</h3>
+                <p>Découvrez les meilleures pratiques utilisées dans l'industrie laitière.</p>
+            </div>
+            <div class="about-item">
+                <img src="icons/icon-yaourt.png" alt="Pot de yaourt">
+                <h3>Transformation diversifiée</h3>
+                <p>Apprenez à transformer le lait en différents produits laitiers de qualité.</p>
+            </div>
+            <div class="about-item">
+                <img src="icons/icon-cuves.png" alt="Équipement laitier">
+                <h3>Équipement adapté</h3>
+                <p>Utilisez du matériel spécialisé pour obtenir les meilleurs résultats.</p>
+            </div>
+        </div>
     </section>
 
     <footer>
