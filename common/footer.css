@@ -1,0 +1,66 @@
+/* Footer commun pour toutes les pages */
+footer {
+    background-color: #333; /* Couleur de fond foncée */
+    color: white; /* Texte blanc */
+    padding: 40px 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 10px 0;
+    font-size: 0.9rem;
+}
+
+footer .footer-links {
+    margin: 20px 0;
+}
+
+footer .footer-links a {
+    color: #ff9800; /* Couleur des liens */
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+footer .footer-links a:hover {
+    color: #e68a00; /* Couleur au survol */
+    text-decoration: underline;
+}
+
+/* Icônes de réseaux sociaux */
+footer .social-icons {
+    margin: 20px 0;
+}
+
+footer .social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+    color: white;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+footer .social-icons a:hover {
+    color: #ff9800;
+}
+
+/* Responsivité du footer pour les petits écrans */
+@media (max-width: 768px) {
+    footer {
+        padding: 20px 10px;
+    }
+
+    footer .footer-links a {
+        margin: 0 10px;
+        font-size: 0.9rem;
+    }
+
+    footer p {
+        font-size: 0.8rem;
+    }
+
+    footer .social-icons a {
+        font-size: 1.2rem;
+    }
+}
