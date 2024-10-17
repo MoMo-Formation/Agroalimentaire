@@ -1,27 +1,6 @@
-/* Global styles for all pages */
-body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
-    line-height: 1.6;
-}
+/* styles.css (à la racine du projet) */
 
-h1, h2, h3 {
-    color: #2e8b57;
-}
-
-a {
-    color: #ff9800;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-/* Header/Banner Section */
+/* Header/Banner Section pour la page d'accueil */
 .hero {
     background-image: url('accueil/images/background-agro.jpg'); /* Image de fond */
     background-size: cover;
@@ -43,6 +22,7 @@ a:hover {
     color: #8B4513;
 }
 
+/* Bouton dans le header */
 .hero-btn {
     background-color: #ff9800;
     color: white;
@@ -58,11 +38,10 @@ a:hover {
     background-color: #e68a00;
 }
 
-/* About section on the homepage */
+/* Section "À propos" de l'accueil */
 .about {
-    padding: 50px 0;
-    text-align: center;
     background-color: #e0f7fa;
+    padding: 50px 0;
 }
 
 .about h2 {
@@ -78,7 +57,7 @@ a:hover {
     gap: 30px;
     max-width: 1200px;
     margin: 0 auto;
-    flex-wrap: wrap; /* Important pour la responsivité */
+    flex-wrap: wrap;
 }
 
 .about-item {
@@ -87,7 +66,7 @@ a:hover {
     background-color: white;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
 }
 
@@ -100,22 +79,10 @@ a:hover {
     margin-bottom: 15px;
 }
 
-.about-item h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    color: #333;
-}
-
-.about-item p {
-    font-size: 1rem;
-    color: #666;
-}
-
-/* Formations section */
+/* Section des formations */
 .formations {
     background-color: #fff8e1;
     padding: 50px 0;
-    text-align: center;
 }
 
 .formations h2 {
@@ -130,7 +97,7 @@ a:hover {
     gap: 20px;
     max-width: 1200px;
     margin: 0 auto;
-    flex-wrap: wrap; /* Important pour la responsivité */
+    flex-wrap: wrap;
 }
 
 .formation-card {
@@ -139,7 +106,7 @@ a:hover {
     background-color: white;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
@@ -173,94 +140,7 @@ a:hover {
     background-color: #267a46;
 }
 
-/* Testimonials section */
-.testimonials {
-    padding: 50px 0;
-    text-align: center;
-    background-color: #fce4ec;
-}
-
-.testimonials h2 {
-    font-size: 2.5rem;
-    margin-bottom: 30px;
-    color: #d81b60;
-}
-
-.testimonial-list {
-    display: flex;
-    justify-content: space-around;
-    gap: 30px;
-    max-width: 1200px;
-    margin: 0 auto;
-    flex-wrap: wrap;
-}
-
-.testimonial-item {
-    text-align: center;
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-}
-
-.testimonial-item:hover {
-    transform: translateY(-5px);
-}
-
-.testimonial-item p {
-    font-size: 1.1rem;
-    color: #666;
-    margin-bottom: 10px;
-}
-
-.testimonial-item span {
-    font-size: 0.9rem;
-    color: #999;
-}
-
-/* CTA Section */
-.cta {
-    background-color: #4caf50;
-    color: white;
-    padding: 50px 20px;
-    text-align: center;
-}
-
-.cta h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-}
-
-.cta p {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
-}
-
-.cta .btn {
-    background-color: #ff9800;
-    color: white;
-    padding: 15px 30px;
-    text-decoration: none;
-    font-size: 1.2rem;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-.cta .btn:hover {
-    background-color: #e68a00;
-}
-
-/* Footer */
-footer {
-    background-color: #333;
-    color: white;
-    padding: 20px;
-    text-align: center;
-    font-size: 0.9rem;
-}
-
-/* Media Queries for mobile responsiveness */
+/* Media queries pour la responsivité sur mobile */
 @media (max-width: 768px) {
     .hero-content h1 {
         font-size: 2rem;
@@ -270,11 +150,11 @@ footer {
         font-size: 1rem;
     }
 
-    .about-content, .formation-list, .testimonial-list {
+    .about-content, .formation-list {
         flex-direction: column;
     }
 
-    .about-item, .formation-card, .testimonial-item {
+    .about-item, .formation-card {
         max-width: 100%;
         margin-bottom: 20px;
     }
@@ -282,17 +162,5 @@ footer {
     .hero-btn {
         font-size: 1rem;
         padding: 10px 20px;
-    }
-
-    .cta h2 {
-        font-size: 2rem;
-    }
-
-    .cta p {
-        font-size: 1rem;
-    }
-
-    footer {
-        font-size: 0.8rem;
     }
 }
